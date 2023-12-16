@@ -1,0 +1,4 @@
+config BR2_PACKAGE_LDD
+    bool "ldd"
+    help
+      Enable support for ldd modules in the root filesystem.
