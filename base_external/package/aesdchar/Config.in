@@ -1,0 +1,4 @@
+config BR2_PACKAGE_AESDCHAR
+    bool "aesdchar"
+    help
+      Enable support for AESDCHAR modules in the root filesystem.

@@ -6,11 +6,11 @@ case $1 in
     start)
         $INITSCRIPTS_DIR/scull_load
         $INITSCRIPTS_DIR/module_load faulty
-        modprobe hello
+        $INITSCRIPTS_DIR/aesdchar_load
     ;;
     stop)
         $INITSCRIPTS_DIR/scull_unload
         $INITSCRIPTS_DIR/module_unload faulty
-        rmmod hello
+        $INITSCRIPTS_DIR/aesdchar_unload
     ;;
 esac
